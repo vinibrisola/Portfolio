@@ -11,24 +11,25 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Spotify clone with next.js',
+    title: 'Spotify with NEXT.JS 12.0',
     github: 'https://github.com/vinibrisola/spotifyClone',
     demo: 'https://github.com',
   },
   {
     id: 2,
     image: IMG2,
-    title: 'A salon scheduling app',
+    title: 'Create a salon and barbershop scheduling app',
     github: 'https://github.com/vinibrisola/Check-Your-Time',
     demo: 'https://github.com',
   },
   {
     id: 3,
     image: IMG3,
-    title: 'Site Check your time',
-    github: 'https://github.com/vinibrisola/SiteCTY',
+    title: 'Create a neural network using JavaScript with no libraries',
+    github: 'https://github.com/vinibrisola/self-drivinf-car',
     demo: 'https://github.com',
-  },]
+  },
+]
 
 
 
