@@ -27,6 +27,7 @@
   margin-bottom: 1rem;
 }
 
+
 @media screen and (max-width: 1024px){
   .portfolio__container{
     grid-template-columns: 1fr 1fr;

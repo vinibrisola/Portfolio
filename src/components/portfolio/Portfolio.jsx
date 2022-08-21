@@ -11,47 +11,24 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'This is a portfolio item title',
-    github: 'https://github.com',
+    title: 'Spotify clone with next.js',
+    github: 'https://github.com/vinibrisola/spotifyClone',
     demo: 'https://github.com',
   },
   {
     id: 2,
     image: IMG2,
-    title: 'This is a portfolio item title',
-    github: 'https://github.com',
+    title: 'A salon scheduling app',
+    github: 'https://github.com/vinibrisola/Check-Your-Time',
     demo: 'https://github.com',
   },
   {
     id: 3,
     image: IMG3,
-    title: 'This is a portfolio item title',
-    github: 'https://github.com',
+    title: 'Site Check your time',
+    github: 'https://github.com/vinibrisola/SiteCTY',
     demo: 'https://github.com',
-  },
-  {
-    id: 4,
-    image: IMG4,
-    title: 'This is a portfolio item title',
-    github: 'https://github.com',
-    demo: 'https://github.com',
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: 'This is a portfolio item title',
-    github: 'https://github.com',
-    demo: 'https://github.com',
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: 'This is a portfolio item title',
-    github: 'https://github.com',
-    demo: 'https://github.com',
-  },
-
-]
+  },]
 
 
 
@@ -79,7 +56,6 @@ const Portfolio = () => {
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
                   <a href={github} className='btn' target='_blalnk'>Github</a>
-                  <a href={demo} className='btn btn-primary' target='_blalnk'>live Demo</a>
                 </div>
               </article>
             )

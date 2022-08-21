@@ -1,10 +1,29 @@
-import React from 'react'
+import React,{ useRef }  from 'react'
 import './contact.css'
 import { MdOutlineEmail } from 'react-icons/md';
 import { RiMessengerLine } from 'react-icons/ri';
 import { BsWhatsapp } from 'react-icons/bs';
+import emailjs from 'emailjs-com';
+
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_wf7l3jq', 'template_a8yvhbj', form.current, 'et9saK7hjnqKLRWTc')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  };
+
+
+
+
   return (
     <section id="contact">
       <h5>Get in Touch</h5>
@@ -20,7 +39,7 @@ const Contact = () => {
           <article className='contact__option'>
             <RiMessengerLine className="contact__option-icon" />
             <h4>Messenger</h4>
-            <h5>vinicius brisola</h5>
+            <h5>Vinicius Brisola Alves</h5>
             <a href="https://m.me/vinicius.brisola.1" target="_blank" rel="noreferrer">send message</a>
           </article>
           <article className='contact__option'>
@@ -30,10 +49,10 @@ const Contact = () => {
             <a href="https://api.whatsapp.com/send?phone=5551997905379&text=Ol%C3%A1%2C%20Vim%20pelo%20Portifolio" target="_blank" rel="noreferrer">send message</a>
           </article>
         </div>
-        <form action="">
-          <input type="text" name="name" placeholder='Digite seu nome' required />
-          <input type="email" name="email" placeholder='Digite seu E-mail' required />
-          <textarea name="message" placeholder='Digite sua mensagem' rows="7" required></textarea>
+        <form ref={form} onSubmit={sendEmail}>
+          <input type="text" name="name" placeholder='Type your name' required />
+          <input type="email" name="email" placeholder='Type your E-mail' required />
+          <textarea name="message" placeholder='Type your message ' rows="7" required></textarea>
           <button type="submit" className='btn btn-primary'>Send Message</button>
         </form>
       </div>

@@ -24,18 +24,13 @@ const About = () => {
               <small>2+ Years Working</small>
             </article>
             <article className="about__card">
-              <FiUsers className="about__icon" />
-              <h5>Clientes</h5>
-              <small>200+ Worlwide</small>
-            </article>
-            <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>10+ Completed</small>
             </article>
           </div>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, repellendus? Alias cupiditate perferendis, impedit quaerat beatae et officiis molestiae ipsa, pariatur reiciendis vero sequi fuga cum voluptatum laboriosam. Facilis, minus?
+          Hello, I'm Vinícius brisola Alves, 23 years old, graduated in systems analysis and development. I have been working with software development since 2019. I founded and i'm the CTO of Check Your Time. always concerned about User experience and using data-metrics to reach high retention rates
           </p>
           <a href="#contact" className='btn btn-primary'>Contact</a>
         </div>

@@ -1,9 +1,11 @@
 import React from 'react'
-import CV from '../../assets/cv.pdf'
+import CVEN from '../../assets/Vinicius BrisolaEN-us.pdf'
+import CVPT from '../../assets/Vinicius BrisolaPT-br.pdf'
 const CTA = () => {
   return (
     <div className="cta">
-      <a href={CV} download className='btn'>Dowload CV</a>
+      <a href={CVEN} download className='btn'>Dowload CV EN-us</a>
+      <a href={CVPT} download className='btn'>Dowload CV PT-br</a>
       <a href="#contact" className='btn btn-primary'>Let's Talk</a>
     </div>
   )
