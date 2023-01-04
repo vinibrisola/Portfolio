@@ -37,7 +37,7 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>React Js</p>
+              <p>React JS</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
@@ -45,11 +45,19 @@ const Services = () => {
             </li>
             <li>
               <BiCheck className='service__list-icon' />
+              <p>TypeScript</p>
+            </li>
+            <li>
+              <BiCheck className='service__list-icon' />
+              <p>Tailwind CSS</p>
+            </li>
+            <li>
+              <BiCheck className='service__list-icon' />
               <p>React-Native</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Bootstrap 5</p>
+              <p>Bootstrap</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
@@ -57,7 +65,7 @@ const Services = () => {
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Git</p>
+              <p>Next JS</p>
             </li>
           </ul>
         </article>
